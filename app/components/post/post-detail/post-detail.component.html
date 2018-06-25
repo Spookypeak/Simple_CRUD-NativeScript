@@ -1,0 +1,22 @@
+<ScrollView class="m-x-">
+  <StackLayout class="form">
+    <StackLayout class="input-field">
+      <Label class="label" text="Id"></Label>
+      <TextField [(ngModel)]="post.id" hint="Id" keyboardType="number"></TextField>
+    </StackLayout>
+    <StackLayout class="input-field">
+      <Label class="label" text="User id"></Label>
+      <TextField [(ngModel)]="post.userId" hint="User id" keyboardType="number"></TextField>
+    </StackLayout>
+    <StackLayout class="input-field">
+      <Label class="label" text="Title"></Label>
+      <TextView [(ngModel)]="post.title" hint="Title"></TextView>
+    </StackLayout>
+    <StackLayout class="input-field">
+      <Label class="label" text="Body"></Label>
+      <TextView [(ngModel)]="post.body" hint="Body"></TextView>
+    </StackLayout>
+    <button class="btn btn-primary" type="submit" text="Guardar" (tap)="guardarPost()"></button>
+    <button class="btn btn-danger" type="submit" text="Eliminar" (tap)="eliminarPost(post.id)"></button>
+  </StackLayout>
+</ScrollView>

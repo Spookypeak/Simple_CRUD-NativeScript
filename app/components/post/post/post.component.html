@@ -1,0 +1,15 @@
+<GridLayout (tap)="verPost(i)" rows="150" columns="*" class="box">
+  <GridLayout row="0" columns="80, *">
+    <StackLayout col="0">
+      <Image class="m-t-30 m-b-15" src="res://icon" width="80" height="80"></Image>
+    </StackLayout>
+    <GridLayout col="1" rows="30, *">
+      <StackLayout row="0">
+        <Label class="h3" [text]="post.title"></Label>
+      </StackLayout>
+      <StackLayout row="1">
+        <Label textWrap="true" [text]="post.body"></Label>
+      </StackLayout>
+    </GridLayout>
+  </GridLayout>
+</GridLayout>
